@@ -1,5 +1,10 @@
 import unittest
-from ..Core import utils
+import sys
+import os
+
+# Ensure the Core module is in the Python path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Core')))
+from Core import utils
 
 
 class TestUtils(unittest.TestCase):
@@ -9,7 +14,7 @@ class TestUtils(unittest.TestCase):
                 "id": 1,
                 "text": "Test task",
                 "created": "2025-01-01T12:00:00",
-                "module": "test",
+                "module": "Test",
             }
         ]
         utils.save_tasks(self.sample_tasks)

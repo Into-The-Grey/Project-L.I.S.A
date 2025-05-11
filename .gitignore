@@ -1,3 +1,7 @@
 .vscode/settings.json
 
 .vscode
+Tests/__pycache__/test_utils.cpython-313.pyc
+desktop.ini
+Core/__pycache__/__init__.cpython-313.pyc
+Core/__pycache__/utils.cpython-313.pyc
