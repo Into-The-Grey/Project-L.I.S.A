@@ -45,12 +45,12 @@ def clear_tasks():
 def export_tasks(fmt, output_file):
     tasks = load_tasks()
     path = Path(output_file)
+    if not tasks:
+        return
     if fmt == "json":
         with open(path, "w") as f:
             json.dump(tasks, f, indent=2)
     elif fmt == "csv":
-        if not tasks:
-            return
         with open(path, "w", newline='') as f:
             writer = csv.DictWriter(f, fieldnames=tasks[0].keys())
             writer.writeheader()

@@ -1,10 +1,35 @@
-{
-  "tasks": [
-    {
-      "id": 1,
-      "text": "Test task",
-      "created": "2025-01-01T12:00:00",
-      "module": "Test"
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "text": "Due task",
+    "created": "2025-05-13T09:35:54.095565",
+    "module": "work",
+    "due": "2025-05-13",
+    "priority": "high"
+  },
+  {
+    "id": 2,
+    "text": "Acknowledged",
+    "created": "2025-05-13T09:35:54.095565",
+    "module": "home",
+    "due": "2025-05-13",
+    "priority": "medium",
+    "acknowledged": true
+  },
+  {
+    "id": 3,
+    "text": "Future task",
+    "created": "2025-05-13T09:35:54.095565",
+    "module": "study",
+    "due": "2025-05-15",
+    "priority": "low"
+  },
+  {
+    "id": 4,
+    "text": "Invalid due",
+    "created": "2025-05-13T09:35:54.095565",
+    "module": "home",
+    "due": "BAD",
+    "priority": "low"
+  }
+]
